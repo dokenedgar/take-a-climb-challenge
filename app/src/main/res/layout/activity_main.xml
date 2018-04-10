@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        tools:context="com.edgar.tictactoe.MainActivity"
+        >
+
+
+        <TableLayout
+            android:id="@+id/glGameBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvInfo"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:padding="8dp"
+            >
+
+            <!--Row 1-->
+            <TableRow>
+
+                <Button
+                    android:id="@+id/row00"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textSize="25sp"
+                    android:textColor="#131313"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:layout_margin="4dp"
+                    style="@style/Widget.AppCompat.Button"
+                    />
+
+                <Button
+                    android:id="@+id/row01"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textSize="25sp"
+                    android:textColor="#131313"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:layout_margin="4dp"
+                    style="@style/Widget.AppCompat.Button"
+                    />
+
+                <Button
+                    android:id="@+id/row02"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textSize="25sp"
+                    android:textColor="#131313"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:layout_margin="4dp"
+                    style="@style/Widget.AppCompat.Button"
+                    />
+
+            </TableRow>
+
+            <!--Row 2-->
+            <TableRow>
+
+                <Button
+                    android:id="@+id/row10"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textSize="25sp"
+                    android:textColor="#131313"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:layout_margin="4dp"
+                    style="@style/Widget.AppCompat.Button"
+                    />
+
+                <Button
+                    android:id="@+id/row11"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textSize="25sp"
+                    android:textColor="#131313"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:layout_margin="4dp"
+                    style="@style/Widget.AppCompat.Button"
+                    />
+
+                <Button
+                    android:id="@+id/row12"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textSize="25sp"
+                    android:textColor="#131313"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:layout_margin="4dp"
+                    style="@style/Widget.AppCompat.Button"
+                    />
+
+            </TableRow>
+
+            <!--Row 3-->
+            <TableRow>
+
+                <Button
+                    android:id="@+id/row20"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textSize="25sp"
+                    android:textColor="#131313"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:layout_margin="4dp"
+                    style="@style/Widget.AppCompat.Button"
+                    />
+
+                <Button
+                    android:id="@+id/row21"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textSize="25sp"
+                    android:textColor="#131313"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:layout_margin="4dp"
+                    style="@style/Widget.AppCompat.Button"
+                    />
+
+                <Button
+                    android:id="@+id/row22"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textSize="25sp"
+                    android:textColor="#131313"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:layout_margin="4dp"
+                    style="@style/Widget.AppCompat.Button"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <!--TextView to show user turns and winner-->
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#424242"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:padding="8dp"
+            />
+
+        <!--Button to reset game board-->
+        <Button
+            android:id="@+id/ResetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/glGameBoard"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:padding="8dp"
+            android:text="RESET"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="#f20410"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
